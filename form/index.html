@@ -24,7 +24,7 @@
         <tr>
           <td>お名前：</td>
           <td>
-            <input type="text" name="yourName" id="yourName">
+            <input type="text" name="yourName" id="yourName" value="お名前は？">
           </td>
         </tr>
         <tr>
@@ -67,6 +67,7 @@
             答え３<input type="checkbox" name="yourAns2" id="yourAns2" value="答え2">
           </td>
         </tr>
+        <!-- プルダウン式の選択できるタグ -->
         <tr>
           <td>職業</td>
           <td>
@@ -79,13 +80,21 @@
             </select>
           </td>
         </tr>
+        <!-- テキストフィールドの作成 -->
         <tr>
-          <td></td>
-          <td></td>
+          <td><その他：</td>
+          <td>
+            <textarea name="name" rows="5" cols="45">
+              ご質問はこちらまで
+            </textarea>
+          </td>
         </tr>
         <tr>
           <td></td>
-          <td></td>
+          <td>
+             <input type="submit" name="yourSubmit" id="" value="送信">送信
+             <input type="reset" name="yourReset" id="" value="リセット">リセット
+          </td>
         </tr>
       </table>
     </form>
