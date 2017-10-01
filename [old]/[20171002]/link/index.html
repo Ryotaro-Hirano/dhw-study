@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C/DTD XHTML 1.0 Transitional//EN">
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>リンク編 | HTMLタグ基本練習</title>
+  </head>
+  <body>
+
+   <h1>
+     <a name="pagetop"　id="pagetop">
+     </a>リンク編 | HTMLタグ基本練習
+   </h1>
+   <hr/>
+   <ul>
+     <li><a href="../index.html">ホーム</a></li>
+     <li><a href="../text/index.html">テキスト</a></li>
+     <li><a href="../list/index.html">リスト</li>
+     <li><a href="../img/index.html">イメージ</a></li>
+     <li>リンク</li>
+     <li><a href="../table/index.html">テーブル</a></li>
+     <li><a href="../form/index.html">フォーム</a></li>
+     <li><a href="../sample/index.html">サンプル</a></li>
+   </ul>
+   <hr/>
+
+   <h2>相対パスと絶対パス</h2>
+
+   <h3>相対パス</h3>
+   <p>
+     自分のサイト内のリンクでよく使われるリンクで、自分のいる場所からのリンクを設定します。
+   </p>
+
+   <h4>サンプル</h4>
+   <ul>
+     <li><a href="index.html">HTMLタグ基本練習テキスト編へリンク</a></li>
+     <li><a href="list.html">HTMLタグ基本練習リスト編へリンク</a></li>
+   </ul>
+
+   <h3>絶対パス</h3>
+   <p>httpから始まるURLでリンクを設定します。(外部のリンクにリンクを貼り付ける場合)</p>
+
+   <h4>サンプル</h4>
+    <ul>
+       <li><a href="https://www.yahoo.co.jp/">ヤフーへリンク</a></li>
+       <li><a href="https://www.google.co.jp/" target="_blank">グーグルへリンク</a>(別ウィンドウ)</li>
+     </ul>
+     <hr/>
+
+    <h2>テキストリンクのtitle属性</h2>
+    <p><a href="#" title="デジハリセミナー情報詳細はこちら">詳細はこちら</a></p>
+    <p>※リンク欄に#を入れると何もリンクしない設置になり、cssの調整用などに使います。この場合にリンク先をクリックすると、自身のページの先頭にリンクする。</p>
+    <hr/>
+
+    <h2>画像からのリンク</h2>
+   <ul>
+    <li>
+      <a href="index.html">
+       <img src="images/logo_dh.gif" width="166" height="48">相対パス（テキスト編）
+      </a>
+    </li>
+    <li>
+      <a href="http://www.dhw.co.jp/" target="_blank">
+       <img src="images/logo_dh.gif" width="166" height="48">絶対パス
+      </a>
+    </li>
+   </ul>
+   <hr/>
+
+   <h2>メーラー起動のリンク設定</h2>
+   <p>メールでのお問い合わせは<a href="maito:xxx@dhw.co.jp">xxx@dhw.co.jp</a>まで</p>
+   <hr/>
+
+   <!-- ページ内リンクの設定 -->
+   <p><a href="#pagetop">ページの先頭へ戻る</a></p>
+   <hr/>
+
+   <address>デジタルハリウッド お問い合わせ：
+     <a href:"maito:xxx@dhw.co.jp">xxx@dhw.co.jp</a>
+   </address>
+
+   <p>Copyright 20XX Digital Hollywood Co.,Ltd All Rights Reserved.</p>
+
+  </body>
+</html>

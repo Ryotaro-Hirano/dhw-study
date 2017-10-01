@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C/DTD XHTML 1.0 Transitional//EN">
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>テーブル編 | HTMLタグ基本練習</title>
+  </head>
+  <body>
+
+    <h1>
+      <a name="pagetop"　id="pagetop"></a>
+      テーブル編 | HTMLタグ基本練習
+    </h1>
+    <hr/>
+    <ul>
+      <li><a href="../index.html">ホーム</a></li>
+      <li><a href="../text/index.html">テキスト</a></li>
+      <li><a href="../list/index.html">リスト</a></li>
+      <li><a href="../img/index.html">イメージ</a></li>
+      <li><a href="../link/index.html">リンク</a></li>
+      <li>テーブル</li>
+      <li><a href="../form/inde.html">フォーム</a></li>
+      <li><a href="../sample/index.html">サンプル</a></li>
+    </ul>
+    <hr/>
+
+    <h2>テーブル基本設定</h2>
+
+    <table summary="テーブル基本設定サンプル">
+      <caption>テーブルサンプル</caption>
+      <tr>
+        <th>見出し１</th>
+        <th>見出し２</th>
+        <th>見出し３</th>
+      </tr>
+      <tr>
+        <td>セル１</td>
+        <td>セル２</td>
+        <td>セル３</td>
+      </tr>
+      <tr>
+        <td>セル４</td>
+        <td>セル５</td>
+        <td>セル６</td>
+      </tr>
+    </table>
+    <hr/>
+
+    <h2>非推奨サンプル</h2>
+
+    <p>幅やボーダーをHTML側で設定。</p>
+
+    <table width="500px;" border="1" cellspacing="0" cellpadding="5" summary="非推奨テーブル：幅などをHTMLで設定したサンプル">
+      <tr>
+        <th>見出し１</th>
+        <th>見出し２</th>
+        <th>見出し３</th>
+      </tr>
+      <tr>
+        <td>セル１</td>
+        <td>セル２</td>
+        <td>セル３</td>
+      </tr>
+      <tr>
+        <td>セル４</td>
+        <td>セル５</td>
+        <td>セル６</td>
+      </tr>
+    </table>
+    <hr/>
+    <!-- 以下はdreamweaverを使ったテーブルの作り方です。 -->
+    <!--
+    テーブルを行と列の数値を入力してコードを描かずしてテーブルを作れるようです。視覚的にテーブルを作れるので、わかりやすく簡単にできます。
+    -->
+    <!-- 以上はdreamweaverを使ったテーブルの作り方です。 -->
+
+    <!-- セルの結合 -->
+    <h2>セルの結合</h2>
+    <table width="500px;" border="1" cellspacing="0" cellpadding="5">
+      <tr>
+        <th scope="col">県</th>
+        <th scope="col">名前</th>
+        <th scope="col">メールアドレス</th>
+      </tr>
+      <tr>
+        <td rowspan="2">東京</td>
+        <td>テキスト</td>
+        <td>テキスト</td>
+      </tr>
+      <tr>
+        <td>テキスト</td>
+        <td>テキスト</td>
+      </tr>
+      <tr>
+        <td>千葉</td>
+        <td>テキスト</td>
+        <td>テキスト</td>
+      </tr>
+      <tr>
+        <td　rowspan="2">神奈川</td>
+        <td>テキスト</td>
+        <td>テキスト</td>
+      </tr>
+      <tr>
+        <td colspan="2">テキスト</td>
+      </tr>
+    </table>
+    <hr/>
+
+
+
+   <hr/>
+
+   <p><a href="#pagetop"></a>ページの先頭へ戻る</p>
+
+   <hr/>
+
+   <address>デジタルハリウッド お問い合わせ：
+     <a href:"maito:xxx@dhw.co.jp">xxx@dhw.co.jp</a>
+   </address>
+
+
+   <p>Copyright 20XX Digital Hollywood Co.,Ltd All Rights Reserved.</p>
+
+  </body>
+</html>
