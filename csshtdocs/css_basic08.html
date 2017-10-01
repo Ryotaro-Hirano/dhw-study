@@ -6,17 +6,19 @@
 
 <style type="text/css">
 
-
+p.tored {
+  color: #f00;
+}
 
 </style>
 
 </head>
 
 <body>
-<h1>特定HTMLとclassの組み合わせ</h1>
+<h1 class="tored">特定HTMLとclassの組み合わせ</h1>
 <p>classなどは設定した要素すべてに適用できますが、<br />
-<span>特定の要素のみに設定したい</span>ということがあります。</p>
-<p>その際は要素のあとにclassを設定することによってclassを設定できる要素を決めることができます。</p>
+<span class="tored">特定の要素のみに設定したい</span>ということがあります。</p>
+<p class="tored">その際は要素のあとにclassを設定することによってclassを設定できる要素を決めることができます。</p>
 <p>今回の場合のクラスtoredはp要素とspan要素にしか適用しませんのでh要素に設定した部分は文字が赤字になりません。</p>
 </body>
 </html>
