@@ -37,6 +37,7 @@ a:active {
   text-decoration: underline;
 }
 
+/*下記でもよい*/
 /*a{
   color: #069;
   text-decoration: underline;
@@ -56,6 +57,7 @@ a.etc1:active {
   text-decoration: none;
 }
 
+/*下記でもよい*/
 /*a.etc1 {
   color: #060;
   text-decoration: none;
@@ -67,7 +69,22 @@ a.etc1:hover {
 /*====================
 別リンク設定2（領域設定）
 ====================*/
+/*下記でもよい*/
+/*div#linkarea a:link,
+div#linkarea a:visited,
+div#linkarea a:active {
+  color: #f00;
+  text-decoration: underline;
+}*/
 
+div#linkarea a {
+  color: #f00;
+  text-decoration: underline;
+}
+div#linkarea a:hover{
+  color: #00f;
+  text-decoration: none;
+}
 
 </style>
 
