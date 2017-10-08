@@ -53,14 +53,15 @@ img{
 画像01
 ============*/
 img.img1{
-	
+	border: 2px solid #999;
 }
 
 /*============
 画像02
 ============*/
 img.img2{
-	
+	border: 1px solid #999;
+	padding: 2px;
 }
 
 
@@ -68,7 +69,7 @@ img.img2{
 画像03
 ============*/
 img.img3{
-	
+
 }
 
 
@@ -76,11 +77,9 @@ img.img3{
 画像04
 ============*/
 img.img4{
-	
+
 }
 
 img.img4:hover{
-	
+
 }
-
-
