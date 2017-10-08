@@ -5,16 +5,16 @@ div#setsumei h1{
 	background:#069;
 	color:#fff;
 	font-size:130%;
-
+	border: 5px solid #333;
 }
 
 /*h2　中見出しの設定*/
 
 div#setsumei h2{
-
 	font-size:110%;
 	font-weight:bold;
-
+	border-left: 5px solid #069;
+	border-bottom: 1px dashed;
 }
 
 div#setsumei p{
@@ -24,16 +24,17 @@ div#setsumei p{
 
 /*サンプル枠*/
 div#area{
-	border-style: solid;
+	/*border-style: solid;
 	background:#ffc;
 	border-width: 1px;
-	border-color: #666;
+	border-color: #666;*/
+	boder: 1px solid #666;
 }
 
 div#area h2{
 	color:#069;
 	font-weight:bold;
-
+	border-bottom: 3px double #666;
 }
 
 div#area p{
