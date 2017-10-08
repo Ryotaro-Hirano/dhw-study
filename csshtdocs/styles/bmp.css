@@ -29,14 +29,16 @@ div#area{
 	border-width: 1px;
 	border-color: #666;*/
 	boder: 1px solid #666;
-	margin-top: 15px;
+	/*margin-top: 15px;
 	margin-right: 25px;
 	margin-bottom: 0px;
 	margin-left: 25px;
 	padding-top: 10px;
 	padding-right: 15px;
 	padding-bottom: 20px;
-	padding-left: 25px;
+	padding-left: 25px;*/
+	padding: : 7px;
+	margin: 15px 25px;
 }
 
 div#area h2{
