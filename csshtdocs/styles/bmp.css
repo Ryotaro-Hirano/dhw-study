@@ -27,6 +27,7 @@ div#area{
 	border-style: solid;
 	background:#ffc;
 	border-width: 1px;
+	border-color: #666;
 }
 
 div#area h2{
