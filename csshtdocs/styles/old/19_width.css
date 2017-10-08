@@ -9,7 +9,7 @@ body{
 
 /*IDcontainerの幅と背景を変えて上下に余白を15px設定*/
 div#container{
-	width: 760px;
+	
 	background:#fff;
 	padding:15px 0;
 }
@@ -44,7 +44,7 @@ div#area{
 	background:#ffc;
 	padding:8px;
 	margin:15px auto;
-	width: 500px;
+	
 }
 
 /*divタグのIDareaのh2
@@ -87,7 +87,7 @@ div#nav h2{
 div#nav ul{
 	border:1px solid #666;
 	margin:15px 40px 0;
-	width: 120px;
+	
 }
 
 /*divタグのIDnavのa
@@ -123,3 +123,9 @@ div#nav li{
 div#nav li.end{
 	border-bottom:none;
 }
+
+
+
+
+
+
