@@ -13,46 +13,52 @@
 <div id="container">
 <h1>clearbothとclearfixサンプル</h1>
 <h2>ひとつの段落に写真とテキスト(clear:bothなし)</h2>
-<p><img src="images/pho01.jpg" width="126" height="192" alt="" />イメージにclass=&quot;left&quot;を設定してfloat:leftをつけています。そうするとこの段落のテキストと次の段落の『詳細を見る』の段落のテキストも回り込みます。テキストが長いと写真の回り込みをしますが短い場合を想定して処理をする必要があります。</p>
+<p><img src="images/pho01.jpg" width="126" height="192" alt="" class="left" />イメージにclass=&quot;left&quot;を設定してfloat:leftをつけています。そうするとこの段落のテキストと次の段落の『詳細を見る』の段落のテキストも回り込みます。テキストが長いと写真の回り込みをしますが短い場合を想定して処理をする必要があります。</p>
 <p>次の見出しを回り込みさせないために空のdivタグを設定してそこにclass=&quot;clear&quot;をかけていますがあまり好ましくありません。h2タグにかけることも可能ですがそうするとh2タグのマージンが効かないので注意が必要です。</p>
 <p><a href="#" class="more">詳細を見る</a></p>
 
-
+<div class="clear">
+<!-- 空のdivを置きます。これは、上で使ったfloatの解除を行うために設けました。 -->
 <!-- これはあまり好ましくない使い方ですが余白をつけたいなどどうしよもないときに使用します。 -->
+</div>
 
 <h2>ひとつの段落に写真とテキスト(clear:bothあり)</h2>
-<p><img src="images/pho01.jpg" width="126" height="192" alt="" />ここでは『詳細を見る』を回り込ませないようにpタグにclass=&quot;clear&quot;をかけています。そうすることによってこの段落のテキストが少なくても回り込みが解除されます。</p>
+<p><img src="images/pho01.jpg" width="126" height="192" alt="" class="left" />ここでは『詳細を見る』を回り込ませないようにpタグにclass=&quot;clear&quot;をかけています。そうすることによってこの段落のテキストが少なくても回り込みが解除されます。</p>
 <p>ただしpタグの上の余白が効かなくなります。</p>
-<p><a href="#" class="more">詳細を見る</a></p>
+<p class="clear"><a href="#" class="more">詳細を見る</a></p>
 
 <h2>写真とテキストを別の段落にする</h2>
-<p><img src="images/pho02.jpg" width="126" height="210" alt="" /></p>
+<p class="left"><img src="images/pho02.jpg" width="126" height="210" alt="" /></p>
 <p>写真とテキストを回り込ませる場合は上のようにひとつのpタグに画像とテキストを入れる場合と今回のように別のpタグにすることもできます。どちらを使用しても問題はありませんがclass=&quot;clear&quot;をあてる場所に注意してください。</p>
 <p>また今回は回り込みのclass=&quot;left&quot;を画像ではなくpタグに設定していますが画像でも変わりはありません。このあたりは最終的にすべてのブラウザで見れるように確認をして自分でルールを決めるとよいです。</p>
-<p>今回はこの段落は回りこませたくなかったのでこの段落にclass=&quot;clear&quot;をつけています。</p>
+<p class="clear">今回はこの段落は回りこませたくなかったのでこの段落にclass=&quot;clear&quot;をつけています。</p>
 <p>ただしclass=&quot;clear&quot;をあてた段落の上の余白が効きません。</p>
 <p><a href="#" class="more">詳細を見る</a></p>
 
 <h2>複数の要素をフロートで指定した場（clear:bothを入れる）</h2>
-<p><img src="images/pho03.jpg" width="126" height="210" alt="" />ひとつのpタグに画像とテキストを入れて画像にclass=&quot;left&quot;を設定したものを複数配置しました。</p>
+<p><img src="images/pho03.jpg" width="126" height="210" alt="" class="float" />ひとつのpタグに画像とテキストを入れて画像にclass=&quot;left&quot;を設定したものを複数配置しました。</p>
 <p>次の要素のpタグにclass=&quot;clear&quot;をあてて回り込みを解除させればテキストが少なくても問題ありませんが上の余白が付かなくなっています。</p>
-<p><img src="images/pho02.jpg" width="126" height="192" alt="" />このようにclass=&quot;clear&quot;は設定した部分の余白が効かなくなるのでレイアウトでは不便で使わなくなります。どうしても使いたい場合は空のdivタグにclass=&quot;clear&quot;を入れるなど対応しますが好ましくはありません。</p>
+<p class="clear"><img src="images/pho02.jpg" width="126" height="192" alt="" class="left" />このようにclass=&quot;clear&quot;は設定した部分の余白が効かなくなるのでレイアウトでは不便で使わなくなります。どうしても使いたい場合は空のdivタグにclass=&quot;clear&quot;を入れるなど対応しますが好ましくはありません。</p>
 
-<!-- これはあまり好ましくない使い方ですが余白をつけたいなどどうしよもないときに使用します。 -->
-<p><img src="images/pho01.jpg" width="126" height="192" alt="" />この段落はpタグにclass=&quot;clear&quot;をつけずに空のdivタグに&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;のようにしたのでpタグの上の余白が付いています。実際このような場合はclearfixというハックを使うのが実用的になります。</p>
+<div class="clear">
+  <!-- これはあまり好ましくない使い方ですが余白をつけたいなどどうしよもないときに使用します。 -->
+</div>
+<p><img src="images/pho01.jpg" width="126" height="192" alt="" class="left" />この段落はpタグにclass=&quot;clear&quot;をつけずに空のdivタグに&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;のようにしたのでpタグの上の余白が付いています。実際このような場合はclearfixというハックを使うのが実用的になります。</p>
 
+<div class="clear">
 <!-- これはあまり好ましくない使い方ですが余白をつけたいなどどうしよもないときに使用します。 -->
+</div>
 
 <h2>複数の要素をフロートで指定した場合（cleafixを入れる）</h2>
-<p><img src="images/pho03.jpg" width="126" height="210" alt="" />class=&quot;clearfix&quot;は設定した次のタグの部分をclearするという形になります。ですので今回の場合は次の段落がclearされます。DWのプレビューではclearfixはサポートされていませんのでレイアウトはズレますので必ずブラウザで確認してください。一段目のpタグのclass=&quot;clearfix&quot;で2段目のpタグが解除されます。</p>
-<p><img src="images/pho02.jpg" width="126" height="192" alt="" />二段目のpタグのclass=&quot;clearfix&quot;で3段目のpタグが解除されます。</p>
-<p><img src="images/pho01.jpg" width="126" height="192" alt="" />三段目のpタグのclass=&quot;clearfix&quot;では次のh2タグが解除されます。このように最後の場合にはclear:bothが入れにくい場合に便利です。</p>
+<p class="clearfix"><img src="images/pho03.jpg" width="126" height="210" alt="" class="left"/>class=&quot;clearfix&quot;は設定した次のタグの部分をclearするという形になります。ですので今回の場合は次の段落がclearされます。DWのプレビューではclearfixはサポートされていませんのでレイアウトはズレますので必ずブラウザで確認してください。一段目のpタグのclass=&quot;clearfix&quot;で2段目のpタグが解除されます。</p>
+<p class="clearfix"><img src="images/pho02.jpg" width="126" height="192" alt="" class="left"/>二段目のpタグのclass=&quot;clearfix&quot;で3段目のpタグが解除されます。</p>
+<p class="clearfix"><img src="images/pho01.jpg" width="126" height="192" alt="" class="clear"/>三段目のpタグのclass=&quot;clearfix&quot;では次のh2タグが解除されます。このように最後の場合にはclear:bothが入れにくい場合に便利です。</p>
 
 
 <h2>複数の要素をフロートで指定した場合で画像とテキストが別段落（clear:bothを入れる場所が難しい場合はclearfix）</h2>
 
   <p><img src="images/pho01.jpg" width="126" height="192" alt="" /></p>
-  
+
   <p>このように画像とテキストが別の段落の場合は入れる場所がちょっと迷います。上のサンプルのようにpタグに入れると画像に入れたfloat:leftも解除されてしまってうまくいきません。</p>
 
 
@@ -61,7 +67,7 @@
 
 
   <p><img src="images/pho03.jpg" width="126" height="192" alt="" /></p>
-  
+
   <p>慣れないうちは入れる場所に悩むとおもいますが色々な箇所に入れて実際にブラウザで確認して慣れていくしかありません。</p>
 
 
