@@ -21,14 +21,16 @@ strong{
 /*============
 横ナビゲーション
 ============*/
-
+.yokonavi li {
+	float: left;
+}
 
 
 
 /*============
 縦ナビゲーション
 ============*/
-/* 
+/*
 リストタグ内に画像を配置すると画像と画像の間に余白が空いてしまうので
 下記を追加しておく。毎回使うのでreset.cssに入れてもよいです。
 ●リストタグ内の画像の余白をクリア
@@ -39,7 +41,9 @@ strong{
 /*============
 clear
 ============*/
-
+.clear {
+	clear:both;
+}
 
 
 /* ===============
@@ -64,7 +68,7 @@ ul#textnavi{
 
 ul#textnavi li{
 	margin:0 20px 0 0;
-	
+
 }
 
 li.bgpdf{
@@ -76,4 +80,3 @@ li.bgmov{
 	background:url(../images/icon_film.gif) no-repeat 0 50%;
 	padding:0 0 0 23px;
 }
-
