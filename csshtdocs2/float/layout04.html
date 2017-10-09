@@ -57,18 +57,20 @@
 
 <h2>複数の要素をフロートで指定した場合で画像とテキストが別段落（clear:bothを入れる場所が難しい場合はclearfix）</h2>
 
-  <p><img src="images/pho01.jpg" width="126" height="192" alt="" /></p>
-
+<div class="clearfix">
+  <p><img src="images/pho01.jpg" width="126" height="192" alt="" class="left" /></p>
   <p>このように画像とテキストが別の段落の場合は入れる場所がちょっと迷います。上のサンプルのようにpタグに入れると画像に入れたfloat:leftも解除されてしまってうまくいきません。</p>
+</div>
 
-
-  <p><img src="images/pho02.jpg" width="126" height="192" alt="" /></p>
+<div class="clearfix">
+  <p><img src="images/pho02.jpg" width="126" height="192" alt="" class="left" /></p>
   <p>この場合は画像のpタグとテキストのpタグをdivタグで囲ってそこにclass="clearfix"</p>
+</div>
 
-
-  <p><img src="images/pho03.jpg" width="126" height="192" alt="" /></p>
-
+<div class="clearfix">
+  <p><img src="images/pho03.jpg" width="126" height="192" alt="" class="left" /></p>
   <p>慣れないうちは入れる場所に悩むとおもいますが色々な箇所に入れて実際にブラウザで確認して慣れていくしかありません。</p>
+</div>
 
 
 </div>
