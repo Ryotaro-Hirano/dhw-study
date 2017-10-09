@@ -35,6 +35,11 @@ strong{
 下記を追加しておく。毎回使うのでreset.cssに入れてもよいです。
 ●リストタグ内の画像の余白をクリア
 */
+li .img {
+	font-size: 0;
+	line-height: 0;
+	vertical-align: top;
+}
 
 
 
