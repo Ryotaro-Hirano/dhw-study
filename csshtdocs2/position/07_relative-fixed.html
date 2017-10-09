@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>relativeとfixedを組み合わせた使い方【外側にposition:relative;を設定する場合】</title>
+<link rel="stylesheet" type="text/css" href="css/reset.css" />
+<link rel="stylesheet" type="text/css" href="css/font.css" />
+<link rel="stylesheet" type="text/css" href="css/layout.css" />
+
+<style type="text/css">
+.boxA{
+	width:800px;
+	height:2000px;
+	margin:0 auto;
+	position: relative;
+}
+
+.boxB{
+	
+}
+</style>
+
+</head>
+
+<body>
+
+<div id="container">
+<div class="boxA">
+
+<div class="boxB">
+<p>BOXB</p>
+</div>
+
+<p class="info2" style="text-align:left; height:800px; width:400px;"><span class="bold">センターコンテンツ内の一部の要素をfixedする場合</span><br />
+fixedをすると位置指定は外側の要素がposition: relative;になっていてもその領域内でなくブラウザの位置からになります。この場合はmarginなどで位置調整をしましょう。</p>
+</div>
+</div>
+
+
+
+</body>
+</html>

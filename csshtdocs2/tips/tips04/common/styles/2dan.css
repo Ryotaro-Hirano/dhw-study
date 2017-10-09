@@ -1,0 +1,98 @@
+@charset "utf-8";
+
+/* ================
+BASIC
+================== */
+body{
+	color:#333;
+	background:#fff;
+	text-align:center;
+}
+
+
+/* ================
+LINK
+================== */
+a{
+	color:#069;
+	text-decoration:none;
+}
+
+a:hover{
+	color:#f60;
+	text-decoration:underline;
+}
+
+/* ================
+LAYOUT
+================== */
+div#container{
+	width:750px;
+	margin:0 auto;
+	text-align:left;
+	background:#fff url(../images/bg_side.gif) repeat-y;
+}
+
+div#header{
+	background:#fff url(../images/bg_header.gif) no-repeat;
+}
+
+
+div#left{
+	float:left;
+	width:150px;
+}
+
+div#right{
+	float:right;
+	width:600px;
+}
+
+div#footer{
+	background:#fff url(../images/bg_footer.gif) bottom no-repeat;
+	clear:both;
+}
+/* ================
+HEADER
+================== */
+
+div#header h1 img{
+	margin:50px 0 15px 25px;
+}
+
+/* ================
+CONTENTS
+================== */
+/*navi*/
+div#left ul{
+	margin:15px 0 0 25px;
+}
+
+div#left li{
+	margin:5px 0 0 0;
+	padding:0 0 0 15px;
+	background:url(../images/icon_menu.jpg) no-repeat 0 50%;
+}
+
+/*main*/
+div#right h2{
+	margin:15px 20px 0 0;
+	padding:2px 4px;
+	color:#069;
+	font-weight:bold;
+	border-left:4px solid #069;
+	border-bottom:1px dashed #666;
+}
+
+div#right p{
+	margin:10px 20px 0 8px;
+}
+
+/* ================
+FOOTER
+================== */
+#footer address{
+	padding:30px 15px 15px 15px;
+	font-size:86%;
+	text-align:right;
+}

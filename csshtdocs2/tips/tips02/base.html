@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>ポジション基本</title>
+<link rel="stylesheet" type="text/css" href="style/reset.css" />
+<link rel="stylesheet" type="text/css" href="style/font.css" />
+<link rel="stylesheet" type="text/css" href="style/base.css" />
+<link rel="stylesheet" type="text/css" href="style/layout.css" />
+</head>
+
+<body>
+<h1>ポジション基本:ここにはposition:fixed</h1>
+
+<div id="container">
+
+
+
+<h2>写真の上にテキストを表示(使用前)</h2>
+
+<div class="area01 clearfix">
+<div class="set">
+  <p><img src="images/01.jpg" width="350" height="233" alt="" /></p>
+  <p class="titlebefore">谷中ネコ写真：01</p>
+</div>
+<div class="set">
+  <p><img src="images/02.jpg" width="350" height="233" alt="" /></p>
+  <p class="titlebefore">谷中ネコ写真：02</p>
+</div>
+</div>
+<p style="background:#ffc;">余白確認用テキスト</p>
+<h2>写真の上にテキストを表示(使用後)：position:relative;</h2>
+<div class="area01 clearfix">
+<div class="set">
+  <p><img src="images/01.jpg" width="350" height="233" alt="" /></p>
+  <p class="titleafter">谷中ネコ写真：01</p>
+</div>
+<div class="set">
+  <p><img src="images/02.jpg" width="350" height="233" alt="" /></p>
+  <p class="titleafter">谷中ネコ写真：02</p>
+</div>
+</div>
+<p style="background:#ffc;">余白確認用テキスト</p>
+<p><strong>※余白確認用テキストの上に「谷中ネコ写真」テキスト分の余白がついています</strong></p>
+
+
+<hr />
+
+<h2>絶対指定でレイアウトを作成(使用前)</h2>
+
+<div id="area02" class="clearfix">
+  <div class="block">
+    <h3>谷中のネコの写真</h3>
+    <p><img src="images/03.jpg" width="350" height="233" alt="" /></p>
+    <p>ネコ写真テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+  </div>
+  
+  <div class="block">
+    <h3>谷中のネコの写真</h3>
+    <p><img src="images/01.jpg" width="350" height="233" alt="" /></p>
+    <p>ネコ写真テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+  </div>
+</div>
+
+
+<h2>絶対指定でレイアウトを作成(使用後)：position:absolute;</h2>
+
+<div id="area02" class="clearfix">
+  <div class="block">
+    <h3 class="abso">谷中のネコの写真</h3>
+    <p><img src="images/03.jpg" width="350" height="233" alt="" class="pho" /></p>
+    <p>ネコ写真テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+  </div>
+  
+  <div class="block">
+    <h3 class="abso">谷中のネコの写真</h3>
+    <p><img src="images/01.jpg" width="350" height="233" alt="" class="pho" /></p>
+    <p>ネコ写真テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+  </div>
+
+</div>
+</div>
+
+
+
+
+
+</body>
+</html>

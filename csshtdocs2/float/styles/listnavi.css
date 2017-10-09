@@ -1,0 +1,79 @@
+@charset "utf-8";
+
+div#container{
+	padding:25px;
+	width:700px;
+}
+
+h2{
+	margin:50px 0 0 0;
+}
+
+p{
+	margin:15px 0 0 0;
+}
+
+strong{
+	color:#f00;
+	font-weight:bold;
+}
+
+/*============
+横ナビゲーション
+============*/
+
+
+
+
+/*============
+縦ナビゲーション
+============*/
+/* 
+リストタグ内に画像を配置すると画像と画像の間に余白が空いてしまうので
+下記を追加しておく。毎回使うのでreset.cssに入れてもよいです。
+●リストタグ内の画像の余白をクリア
+*/
+
+
+
+/*============
+clear
+============*/
+
+
+
+/* ===============
+LINK
+=============== */
+ul#textnavi a{
+	color:#069;
+	text-decoration:none;
+}
+
+ul#textnavi a:hover{
+	color:#f60;
+	text-decoration:underline;
+}
+
+/* ===============
+アイコン背景用
+=============== */
+ul#textnavi{
+	margin:15px 0 0 0;
+}
+
+ul#textnavi li{
+	margin:0 20px 0 0;
+	
+}
+
+li.bgpdf{
+	background:url(../images/icon_pdf.gif) no-repeat 0 50%;
+	padding:0 0 0 23px;
+}
+
+li.bgmov{
+	background:url(../images/icon_film.gif) no-repeat 0 50%;
+	padding:0 0 0 23px;
+}
+

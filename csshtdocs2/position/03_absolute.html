@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>position:absolute</title>
+<link rel="stylesheet" type="text/css" href="css/reset.css" />
+<link rel="stylesheet" type="text/css" href="css/font.css" />
+<link rel="stylesheet" type="text/css" href="css/layout.css" />
+
+<style type="text/css">
+.boxA{
+	
+}
+</style>
+
+</head>
+
+<body>
+
+<div id="container">
+
+<div class="boxA">
+<p>BOXA</p>
+</div>
+
+<div class="boxB">
+<p>BOXB</p>
+</div>
+
+</div>
+
+<p class="info">position:absolute を指定したボックスは、親ボックスにposition プロパティのstatic 以外の値が指定されている場合には、親ボックスの左上が基準位置に、親ボックスにposition プロパティのstatic 以外の値が指定されていない場合には、ウィンドウ全体の左上が基準位置として、top・bottom・left・right を指定して絶対位置に配置されます。</p>
+<p class="info2"><span class="bold">position:relative との違い</span><br />
+position:absolute を指定したボックスは、通常の配置位置とは独立して扱われます。つまり【boxA】は独立したボックスとして配置されるので、本来【boxA】が配置される場所にそのまま次のボックス【boxB】が再配置されます</p>
+</body>
+</html>

@@ -1,0 +1,85 @@
+@charset "utf-8";
+
+/* ===============
+CLAER関連
+=============== */
+.left{
+	float:left;
+}
+
+/* ===============
+area共通
+=============== */
+div#area01 ul,
+div#area02 ul,
+div#area03 ul{
+	margin:0 0 0 30px;
+}
+
+div#area01 li,
+div#area02 li,
+div#area03 li{
+	
+}
+
+div#area01 li img,
+div#area02 li img{
+	margin:10px 10px 0 0;
+}
+
+/* ===============
+area01
+=============== */
+div#area01{
+	width:750px;
+}
+
+/* ===============
+area02
+=============== */
+div#area02{
+	width:770px;
+}
+
+div#area02 li img{
+	
+}
+
+
+/* ===============
+area03
+=============== */
+div#area03 li img{
+	
+	margin:10px 15px 0 0;
+}
+
+
+/* ===============
+area04
+=============== */
+div#photoarea{
+	margin:0 0 0 30px;
+}
+
+div.area04{
+	
+	margin:10px 15px 0 0;
+	width:220px;
+	height:266px;
+	
+}
+
+div.area04 img{
+	
+}
+
+div.area04 p.ttl{
+	
+	font-weight:bold;
+	line-height:1.1;
+}
+
+
+
+

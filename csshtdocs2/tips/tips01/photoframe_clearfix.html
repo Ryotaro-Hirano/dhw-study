@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>CSSで写真の周りを装飾する（外部CSSを使用）</title>
+<link rel="stylesheet" type="text/css" href="styles/reset.css" />
+<link rel="stylesheet" type="text/css" href="styles/font.css" />
+<link rel="stylesheet" type="text/css" href="styles/basic.css" />
+<link rel="stylesheet" type="text/css" href="styles/photo_clearfix.css" />
+</head>
+
+<body>
+<div id="container">
+
+<h1>CSSで写真の周りを装飾する（外部CSSを使用）</h1>
+
+<h2>装飾しない</h2>
+
+<!-- area01 -->
+<div id="area01">
+<ul>
+<li><img src="images/pho_l_01.jpg" width="350" height="233" alt="" /></li>
+<li><img src="images/pho_l_02.jpg" width="350" height="233" alt="" /></li>
+<li><img src="images/pho_l_03.jpg" width="350" height="233" alt="" /></li>
+<li><img src="images/pho_l_04.jpg" width="350" height="233" alt="" /></li>
+</ul>
+</div>
+<!-- /area01 -->
+
+
+
+<h2>ボーダーと背景色で装飾</h2>
+
+<!-- area02 -->
+<div id="area02">
+<ul>
+<li><img src="images/pho_l_01.jpg" width="350" height="233" alt="" /></li>
+<li><img src="images/pho_l_02.jpg" width="350" height="233" alt="" /></li>
+<li><img src="images/pho_l_03.jpg" width="350" height="233" alt="" /></li>
+<li><img src="images/pho_l_04.jpg" width="350" height="233" alt="" /></li>
+</ul>
+</div>
+<!-- /area02 -->
+
+
+<h2>背景画像で装飾</h2>
+
+<!-- area03 -->
+<div id="area03">
+<ul>
+<li><img src="images/pho_f01.jpg" width="198" height="200" alt="" /></li>
+<li><img src="images/pho_f02.jpg" width="198" height="200" alt="" /></li>
+<li><img src="images/pho_f03.jpg" width="198" height="200" alt="" /></li>
+<li><img src="images/pho_f04.jpg" width="198" height="200" alt="" /></li>
+</ul>
+</div>
+<!-- /area03 -->
+
+
+
+<p>フロート解除確認用テキスト</p>
+
+<h2>divに背景画像を設定</h2>
+
+<div id="photoarea">
+  <!-- area -->
+  <div class="area04">
+    <p><img src="images/pho_f01.jpg" width="198" height="200" alt="" /></p>
+    <p class="ttl">オオサンショウウオ</p>
+  </div>
+  <!-- /area -->
+  
+  <!-- area -->
+  <div class="area04">
+    <p><img src="images/pho_f02.jpg" width="198" height="200" alt="" /></p>
+    <p class="ttl">アメリカオオカミ</p>
+  </div>
+  <!-- /area -->
+  
+  <!-- area -->
+  <div class="area04">
+    <p><img src="images/pho_f03.jpg" width="198" height="200" alt="" /></p>
+    <p class="ttl">トリ</p>
+  </div>
+  <!-- /area -->
+  
+  <!-- area -->
+  <div class="area04">
+    <p><img src="images/pho_f04.jpg" width="198" height="200" alt="" /></p>
+    <p class="ttl">ウミガメ</p>
+  </div>
+  <!-- /area -->
+</div>
+
+<p>フロート解除確認用テキスト</p>
+
+
+</div>
+
+</body>
+</html>

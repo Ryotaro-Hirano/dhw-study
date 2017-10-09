@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+p img{
+	margin:0 7px 0 0;
+}
+
+p{
+	margin:10px 0 0;
+}
+
+img{
+	border:1px solid #999;
+	padding:2px;
+}

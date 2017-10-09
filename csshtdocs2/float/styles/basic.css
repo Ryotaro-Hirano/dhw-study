@@ -1,0 +1,79 @@
+@charset "utf-8";
+
+/* ===============
+BASIC
+=============== */
+body{
+	color:#333;
+	background:#fff;
+}
+
+
+div#container{
+	padding:10px 30px;
+}
+h1{
+	border:3px solid #090;
+	background:#0c3;
+	color:#fff;
+	padding:5px;
+	margin:15px 0 0;
+	font-weight:bold;
+}
+
+h2{
+	border-bottom:1px dashed #999;
+	background:url(../images/icon_arrow.gif) no-repeat 0 50%;
+	padding:0 0 2px 18px;
+	margin:15px 0 0;
+	font-weight:bold;
+}
+
+h3{
+	color:#090;
+	font-weight:bold;
+	margin:10px 35px 0;
+}
+
+
+p a.more{
+	background:url(../images/ico_more.gif) no-repeat 0 50%;
+	padding:0 0 0 12px;
+	color:#F60;
+	text-decoration:none;
+}
+
+p a.more:hover{
+	background:url(../images/ico_more_on.gif) no-repeat 0 50%;
+	color:#F90;
+}
+
+
+
+/* ===============
+CLAER関連
+=============== */
+.left{
+	float:left;
+}
+
+.clear{
+	clear:both;
+}
+
+
+/* ===============
+SAMPLE
+=============== */
+div.area{
+	margin:15px 50px 0;
+}
+
+
+
+
+
+
+
+
+

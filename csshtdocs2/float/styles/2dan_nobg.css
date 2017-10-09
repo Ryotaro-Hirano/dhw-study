@@ -1,0 +1,217 @@
+@charset "utf-8";
+
+/*=========================
+BASE
+=========================*/
+body{
+	color:#333;
+	background:#eee;
+}
+
+/*=========================
+layout
+=========================*/
+div#header{
+	width:860px;
+	background:#f60;
+	margin:0 auto;
+	text-align:left;
+}
+
+div#contents{
+	width:860px;
+	margin:0 auto;
+	text-align:left;
+}
+
+div#main{
+	width:700px;
+	background:#fff;
+	float:right;
+	border-left:1px solid #ccc;
+	padding:15px 0 0;
+}
+
+div#sidearea{
+	width:159px;
+	background:#f9f9f9;
+	float:left;
+	padding:7px 0 15px;
+}
+
+p#pagetop{
+	clear:both;
+}
+
+div#footer{
+	width:860px;
+	background:#333;
+	margin:0 auto;
+	text-align:right;
+}
+
+
+/*=========================
+LINK
+=========================*/
+/*ベースリンク設定*/
+a:link,
+a:visited,
+a:active{
+	color:#f60;
+	text-decoration:underline;
+}
+
+a:hover{
+	color:#069;
+	text-decoration:none;
+}
+
+/*メールアドレスリンク設定*/
+div#footer address a{
+	color:#ff0;
+	text-decoration:none;
+}
+
+div#footer address a:hover{
+	text-decoration:underline;
+}
+
+/*コピーライトリンク設定*/
+div#footer p a{
+	color:#ccc;
+	text-decoration:none;
+}
+
+div#footer p a:hover{
+	text-decoration:underline;
+}
+
+
+/*=========================
+header
+=========================*/
+div#header h1{
+	background:url(../images/bg_header.gif) repeat-x;
+	padding:8px 0 10px 8px;
+}
+
+/*=========================
+contents sidenav
+=========================*/
+/*サイドナビゲーション*/
+div#sidearea ul#sidenav{
+	margin:0 0 0 10px;
+}
+
+div#sidearea ul#sidenav li{
+	margin:8px 0 0 0;
+}
+
+div#sidearea ul#sidenav li a{
+	color:#069;
+	text-decoration:none;
+	padding:0 0 0 13px;
+	background:url(../images/bg_sidenav.gif) no-repeat 0 50%;
+
+}
+
+div#sidearea ul#sidenav li a:hover{
+	color:#f60;
+	background:url(../images/bg_sidenav_on.gif) no-repeat 0 50%;
+}
+
+
+/*サイドバナー*/
+
+div#sidearea ul#sidebnr{
+	margin:15px 0 0 9px;
+}
+
+div#sidearea ul#sidebnr li{
+	margin:3px 0 0 0;
+}
+
+div#sidearea ul#sidebnr li img{
+	border:1px solid #ccc;
+	padding:1px;
+}
+
+div#sidearea ul#sidebnr li img:hover{
+	border:1px solid #999;
+}
+
+
+/*=========================
+contents main
+=========================*/
+div#main h2{
+	color:#069;
+	font-weight:bold;
+	border-bottom:1px dashed #999;
+	border-left:5px solid #069;
+	padding:2px 0 1px 6px;
+	margin:0 15px;
+}
+
+div#main h3{
+	color:#069;
+	font-weight:bold;
+}
+
+div#main p{
+	margin:10px 15px 0;
+}
+
+
+/*etc領域*/
+div#main div#etc{
+	border:1px solid #999;
+	padding:8px;
+	margin:15px;
+	background:#ffc;
+}
+
+div#main div#etc p{
+	margin:5px 0 0;
+}
+
+
+/*=========================
+pagetop
+=========================*/
+p#pagetop{
+	text-align:right;
+	background:#fff;
+	padding:10px 15px 10px 0;
+}
+
+p#pagetop a{
+	color:#069;
+	background:url(../images/bg_pagetop.gif) no-repeat 0 50%;
+	padding:0 0 0 15px;
+	text-decoration:none;
+}
+
+p#pagetop a:hover{
+	color:#f60;
+	background:url(../images/bg_pagetop_on.gif) no-repeat 0 50%;
+}
+
+/*=========================
+footer
+=========================*/
+div#footer address,
+div#footer p{
+	color:#fff;
+	font-size:92%;
+}
+
+div#footer address{
+	padding:5px 8px 0 0;
+}
+
+div#footer p{
+	padding:2px 8px 5px 0;
+}
+
