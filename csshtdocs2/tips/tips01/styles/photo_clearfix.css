@@ -19,7 +19,7 @@ div#area03 ul{
 div#area01 li,
 div#area02 li,
 div#area03 li{
-	
+
 }
 
 div#area01 li img,
@@ -42,7 +42,9 @@ div#area02{
 }
 
 div#area02 li img{
-	
+	border: 1px solid #999;
+	padding: 4px;
+	background: #eee;
 }
 
 
@@ -50,7 +52,8 @@ div#area02 li img{
 area03
 =============== */
 div#area03 li img{
-	
+	padding: 13px 12px 53px 10px;
+	background: url(../images/bg_frame.jpg) no-repeat #f00;
 	margin:10px 15px 0 0;
 }
 
@@ -63,23 +66,20 @@ div#photoarea{
 }
 
 div.area04{
-	
+	background: url(../images/bg_frame.jpg) no-repeat;
 	margin:10px 15px 0 0;
 	width:220px;
 	height:266px;
-	
+
 }
 
 div.area04 img{
-	
+	padding: 12px 0 0 10px;
 }
 
 div.area04 p.ttl{
-	
+	text-align: center;
+	margin: 12px 8px 0;
 	font-weight:bold;
 	line-height:1.1;
 }
-
-
-
-
